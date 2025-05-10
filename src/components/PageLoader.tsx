@@ -15,7 +15,14 @@ const PageLoader: React.FC = () => {
   if (!loading) return null;
 
   return (
-    <div className="fixed inset-0 bg-white z-[999] flex items-center justify-center">
+    <div className="fixed inset-0 z-[999] flex items-center justify-center" 
+         style={{
+           background: 'linear-gradient(135deg, #f8f9fa 0%, #f1f1f6 100%)',
+           backgroundImage: 
+             'radial-gradient(circle at 25% 25%, rgba(138, 103, 227, 0.03) 0%, transparent 25%), ' +
+             'radial-gradient(circle at 75% 75%, rgba(138, 103, 227, 0.04) 0%, transparent 30%), ' +
+             'linear-gradient(135deg, #f8f9fa 0%, #f1f1f6 100%)'
+         }}>
       <div className="flex flex-col items-center">
         <div className="relative w-20 h-20">
           <div className="absolute inset-0 border-t-4 border-purple-500 rounded-full animate-spin"></div>
